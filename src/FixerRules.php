@@ -4,7 +4,7 @@ namespace Oire\Helpers;
 use PhpCsFixer\Config;
 use PhpCsFixer\Finder; 
 
-class CSFixerRules
+class CsFixerRules
 {
     /** Last reviewed with PHP CS Fixer 2.16.3 Yellow Bird */
     public const CS_FIXER_RULES = [
