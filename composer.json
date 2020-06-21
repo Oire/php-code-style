@@ -1,0 +1,30 @@
+{
+    "name": "oire/php-code-style",
+    "description": "code style for Oire projects written in PHP.",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "friendsofphp/php-cs-fixer": "^2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre Polykanine also known as Menelion Elensúlë",
+            "email": "ap@oire.me",
+            "homepage": "https://github.com/Menelion",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "issues":   "https://github.com/Oire/php-code-style/issues",
+        "source":   "https://github.com/Oire/php-code-style"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oire\\Helpers\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
