@@ -3,10 +3,10 @@ Code styling standard for Oirë projects written in PHP.
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Oire/php-code-style/blob/master/LICENSE)
 
 This repository contains a set of [PHP CS Fixer](https://github.com/friendsofphp/php-cs-fixer) rules we use in our projects at Oirë. You can use them in your projects, too.  
-The rules were reviewed with *PHP CS Fixer version 2.16.3 Yellow Bird*.
+The rules were reviewed with *PHP CS Fixer version 2.16.4 Yellow Bird*.
 
 ## Usage
-I assume you use [Composer](https://getcomposer.org/) for your dependency management. As we dont add this tiny project to Packagist, first you need to add its repository to your *composer.json* file as follows:
+I assume you use [Composer](https://getcomposer.org/) for your dependency management. As we don’t add this tiny project to Packagist, first you need to add its repository to your *composer.json* file as follows:
 
 ```json
 {
