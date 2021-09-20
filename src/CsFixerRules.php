@@ -178,7 +178,7 @@ class CsFixerRules
 
     public static function style(Finder $finder): Config
     {
-        return Config::create()
+        return (new Config())
             ->setFinder($finder)
             ->setRiskyAllowed(true)
             ->setUsingCache(false)
