@@ -58,7 +58,6 @@ final class CsFixerRules
             'heredoc_syntax' => true
         ],
         'explicit_indirect_variable' => true,
-        'final_static_access' => true,
         'fopen_flag_order' => true,
         'fopen_flags' => ['b_mode' => false],
         'full_opening_tag' => true,
