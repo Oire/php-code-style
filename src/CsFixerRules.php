@@ -237,7 +237,6 @@ final class CsFixerRules
                 'require_once',
                 'return',
                 'static',
-                'switch',
                 'throw',
                 'trait',
                 'try',
