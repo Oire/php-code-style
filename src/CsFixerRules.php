@@ -167,7 +167,6 @@ final class CsFixerRules
         'phpdoc_return_self_reference' => true,
         'phpdoc_scalar' => true,
         'phpdoc_to_param_type' => true,
-        'phpdoc_to_property_type' => true,
         'phpdoc_to_return_type' => true,
         'pow_to_exponentiation' => true,
         'random_api_migration' => ['replacements' => ['rand' => 'random_int']],
