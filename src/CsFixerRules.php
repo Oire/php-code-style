@@ -103,7 +103,7 @@ final class CsFixerRules
         'new_with_braces' => true,
         'no_alias_functions' => ['sets' => ['@all']],
         'no_alias_language_construct_call' => true,
-        'no_alternative_syntax' => ['fix_non_monolithic_code' => false],
+        'no_alternative_syntax' => true,
         'no_blank_lines_after_class_opening' => true,
         'no_break_comment' => ['comment_text' => 'No break, fallthrough intended'],
         'no_closing_tag' => true,
