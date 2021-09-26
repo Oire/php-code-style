@@ -270,7 +270,6 @@ final class CsFixerRules
         'ternary_operator_spaces' => true,
         'ternary_to_elvis_operator' => true,
         'ternary_to_null_coalescing' => true,
-        'trailing_comma_in_multiline_array' => false,
         'trim_array_spaces' => true,
         'types_spaces' => ['space' => 'none'],
         'unary_operator_spaces' => true,
