@@ -12,7 +12,6 @@ final class CsFixerRules
         'array_indentation' => true,
         'array_push' => true,
         'array_syntax' => ['syntax' => 'short'],
-        'assign_null_coalescing_to_coalesce_equal' => true,
         'backtick_to_shell_exec' => true,
         'binary_operator_spaces' => ['default' => 'single_space'],
         'blank_line_after_namespace' => true,
@@ -41,7 +40,6 @@ final class CsFixerRules
         'compact_nullable_typehint' => true,
         'concat_space' => ['spacing' => 'one'],
         'constant_case' => ['case' => 'lower'],
-        'control_structure_continuation_position' => ['position' => 'same_line'],
         'date_time_immutable' => true,
         'declare_equal_normalize' => ['space' => 'none'],
         'declare_parentheses' => true,
@@ -49,7 +47,6 @@ final class CsFixerRules
         'echo_tag_syntax' => ['format' => 'short'],
         'elseif' => true,
         'empty_loop_body' => ['style' => 'semicolon'],
-        'empty_loop_condition' => ['style' => 'while'],
         'encoding' => true,
         'ereg_to_preg' => true,
         'escape_implicit_backslashes' => [
@@ -81,7 +78,6 @@ final class CsFixerRules
         'include' => true,
         'increment_style' => ['style' => 'pre'],
         'indentation_type' => true,
-        'integer_literal_case' => true,
         'lambda_not_used_import' => true,
         'line_ending' => true,
         'linebreak_after_opening_tag' => true,
@@ -99,7 +95,6 @@ final class CsFixerRules
             'after_heredoc' => true
         ],
         'method_chaining_indentation' => true,
-        'modernize_strpos' => true,
         'modernize_types_casting' => true,
         'multiline_comment_opening_closing' => true,
         'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
@@ -124,7 +119,6 @@ final class CsFixerRules
         'no_php4_constructor' => true,
         'no_short_bool_cast' => true,
         'no_singleline_whitespace_before_semicolons' => true,
-        'no_space_around_double_colon' => true,
         'no_spaces_after_function_name' => true,
         'no_spaces_around_offset' => true,
         'no_spaces_inside_parenthesis' => true,
@@ -150,7 +144,6 @@ final class CsFixerRules
         'normalize_index_brace' => true,
         'nullable_type_declaration_for_default_null_value' => ['use_nullable_type_declaration' => true],
         'object_operator_without_whitespace' => true,
-        'octal_notation' => true,
         'operator_linebreak' => [
             'only_booleans' => false,
             'position' => 'beginning'
