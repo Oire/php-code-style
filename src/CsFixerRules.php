@@ -6,12 +6,13 @@ use PhpCsFixer\Finder;
 
 final class CsFixerRules
 {
-    /** Last reviewed with PHP CS Fixer 3.1.0 */
+    /** Last reviewed with PHP CS Fixer 3.2.1 Mountains */
     public const CS_FIXER_RULES = [
         'align_multiline_comment' => ['comment_type' => 'all_multiline'],
         'array_indentation' => true,
         'array_push' => true,
         'array_syntax' => ['syntax' => 'short'],
+        'assign_null_coalescing_to_coalesce_equal' => true,
         'backtick_to_shell_exec' => true,
         'binary_operator_spaces' => ['default' => 'single_space'],
         'blank_line_after_namespace' => true,
@@ -47,6 +48,7 @@ final class CsFixerRules
         'echo_tag_syntax' => ['format' => 'short'],
         'elseif' => true,
         'empty_loop_body' => ['style' => 'semicolon'],
+        'empty_loop_condition' => ['style' => 'while'],
         'encoding' => true,
         'ereg_to_preg' => true,
         'escape_implicit_backslashes' => [
@@ -78,6 +80,7 @@ final class CsFixerRules
         'include' => true,
         'increment_style' => ['style' => 'pre'],
         'indentation_type' => true,
+        'integer_literal_case' => true,
         'lambda_not_used_import' => true,
         'line_ending' => true,
         'linebreak_after_opening_tag' => true,
@@ -95,6 +98,7 @@ final class CsFixerRules
             'after_heredoc' => true
         ],
         'method_chaining_indentation' => true,
+        'modernize_strpos' => true,
         'modernize_types_casting' => true,
         'multiline_comment_opening_closing' => true,
         'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
@@ -103,7 +107,7 @@ final class CsFixerRules
         'new_with_braces' => true,
         'no_alias_functions' => ['sets' => ['@all']],
         'no_alias_language_construct_call' => true,
-        'no_alternative_syntax' => true,
+        'no_alternative_syntax' => ['fix_non_monolithic_code' => false],
         'no_blank_lines_after_class_opening' => true,
         'no_break_comment' => ['comment_text' => 'No break, fallthrough intended'],
         'no_closing_tag' => true,
@@ -120,6 +124,7 @@ final class CsFixerRules
         'no_short_bool_cast' => true,
         'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_after_function_name' => true,
+        'no_space_around_double_colon' => true,
         'no_spaces_around_offset' => true,
         'no_spaces_inside_parenthesis' => true,
         'no_superfluous_elseif' => true,
@@ -144,6 +149,7 @@ final class CsFixerRules
         'normalize_index_brace' => true,
         'nullable_type_declaration_for_default_null_value' => ['use_nullable_type_declaration' => true],
         'object_operator_without_whitespace' => true,
+        'octal_notation' => true,
         'operator_linebreak' => [
             'only_booleans' => false,
             'position' => 'beginning'
