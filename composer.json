@@ -3,13 +3,13 @@
     "description": "code style for Oire projects written in PHP.",
     "type": "library",
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.2",
         "friendsofphp/php-cs-fixer": "*"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Andre Polykanine also known as Menelion Elensúlë",
+            "name": "André Polykanine also known as Menelion Elensúlë",
             "email": "ap@oire.me",
             "homepage": "https://github.com/Menelion",
             "role": "developer"

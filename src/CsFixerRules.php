@@ -6,7 +6,7 @@ use PhpCsFixer\Finder;
 
 final class CsFixerRules
 {
-    /** Last reviewed with PHP CS Fixer 3.2.1 Mountains */
+    /** Last reviewed with PHP CS Fixer 3.52.1 15 Keys */
     public const CS_FIXER_RULES = [
         'align_multiline_comment' => ['comment_type' => 'all_multiline'],
         'array_indentation' => true,
@@ -17,12 +17,9 @@ final class CsFixerRules
         'binary_operator_spaces' => ['default' => 'single_space'],
         'blank_line_after_namespace' => true,
         'blank_line_before_statement' => ['statements' => ['for', 'foreach', 'if', 'return', 'switch', 'try', 'while']],
-        'braces' => [
-            'allow_single_line_anonymous_class_with_empty_body' => true,
-            'allow_single_line_closure' => true,
-            'position_after_functions_and_oop_constructs' => 'next',
-            'position_after_control_structures' => 'same',
-            'position_after_anonymous_constructs' => 'same'
+        'braces_position' => [
+            'classes_opening_brace' => 'same_line',
+            'functions_opening_brace' => 'same_line'
         ],
         'cast_spaces' => ['space' => 'single'],
         'class_definition' => ['single_line' => true],
@@ -34,6 +31,7 @@ final class CsFixerRules
                 'trait_import' => 'none'
             ]
         ],
+        'class_reference_name_casing' => true,
         'clean_namespace' => true,
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
@@ -41,7 +39,9 @@ final class CsFixerRules
         'compact_nullable_typehint' => true,
         'concat_space' => ['spacing' => 'one'],
         'constant_case' => ['case' => 'lower'],
+        'control_structure_braces' => true,
         'date_time_immutable' => true,
+        'date_time_create_from_format_call' => true,
         'declare_equal_normalize' => ['space' => 'none'],
         'declare_parentheses' => true,
         'dir_constant' => true,
@@ -61,7 +61,10 @@ final class CsFixerRules
         'fopen_flags' => ['b_mode' => false],
         'full_opening_tag' => true,
         'fully_qualified_strict_types' => true,
-        'function_declaration' => ['closure_function_spacing' => 'none'],
+        'function_declaration' => [
+            'closure_fn_spacing' => 'none',
+            'closure_function_spacing' => 'none'
+        ],
         'function_to_constant' => [
             'functions' => [
                 'get_called_class',
@@ -72,7 +75,6 @@ final class CsFixerRules
                 'pi'
             ]
         ],
-        'function_typehint_space' => true,
         'global_namespace_import' => true,
         'heredoc_indentation' => true,
         'heredoc_to_nowdoc' => true,
@@ -103,7 +105,7 @@ final class CsFixerRules
         'multiline_comment_opening_closing' => true,
         'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
         'native_function_casing' => true,
-        'native_function_type_declaration_casing' => true,
+        'native_type_declaration_casing' => true,
         'new_with_braces' => true,
         'no_alias_functions' => ['sets' => ['@all']],
         'no_alias_language_construct_call' => true,
@@ -134,16 +136,18 @@ final class CsFixerRules
         'no_trailing_comma_in_singleline_array' => true,
         'no_trailing_whitespace_in_comment' => true,
         'no_unneeded_control_parentheses' => true,
-        'no_unneeded_curly_braces' => ['namespaces' => true],
+        'no_unneeded_braces' => ['namespaces' => true],
         'no_unneeded_final_method' => ['private_methods' => true],
         'no_unreachable_default_argument_value' => true,
         'no_unset_cast' => true,
         'no_unset_on_property' => true,
         'no_unused_imports' => true,
+        'no_useless_concat_operator' => ['juggle_simple_strings' => true],
         'no_useless_else' => true,
+        'no_useless_nullsafe_operator' => true,
         'no_useless_return' => true,
         'no_useless_sprintf' => true,
-        'no_whitespace_before_comma_in_array' => true,
+        'no_whitespace_before_comma_in_array' => ['after_heredoc' => true],
         'no_whitespace_in_blank_line' => true,
         'non_printable_character' => ['use_escape_sequences_in_strings' => true],
         'normalize_index_brace' => true,
@@ -155,6 +159,7 @@ final class CsFixerRules
             'position' => 'beginning'
         ],
         'ordered_imports' => ['sort_algorithm' => 'alpha', 'imports_order' => ['class', 'function', 'const']],
+        'ordered_types' => ['null_adjustment' => 'always_last'],
         'php_unit_construct' => true,
         'php_unit_dedicate_assert' => ['target' => 'newest'],
         'php_unit_dedicate_assert_internal_type' => ['target' => 'newest'],
@@ -178,6 +183,7 @@ final class CsFixerRules
         'random_api_migration' => ['replacements' => ['rand' => 'random_int']],
         'regular_callable_call' => true,
         'return_assignment' => true,
+        'return_to_yield_from' => true,
         'return_type_declaration' => ['space_before' => 'none'],
         'self_accessor' => true,
         'self_static_accessor' => true,
@@ -192,6 +198,7 @@ final class CsFixerRules
         ],
         'single_import_per_statement' => true,
         'single_line_after_imports' => true,
+        'single_line_empty_body' => true,
         'single_quote' => true,
         'single_space_after_construct' => [
             'constructs' => [
@@ -259,6 +266,7 @@ final class CsFixerRules
         'standardize_not_equals' => true,
         'static_lambda' => true,
         'strict_param' => true,
+        'strict_comparison' => true,
         'switch_case_semicolon_to_colon' => true,
         'switch_case_space' => true,
         'switch_continue_to_break' => true,
