@@ -17,10 +17,6 @@ final class CsFixerRules
         'binary_operator_spaces' => ['default' => 'single_space'],
         'blank_line_after_namespace' => true,
         'blank_line_before_statement' => ['statements' => ['for', 'foreach', 'if', 'return', 'switch', 'try', 'while']],
-        'braces_position' => [
-            'classes_opening_brace' => 'next_line',
-            'functions_opening_brace' => 'next_line'
-        ],
         'cast_spaces' => ['space' => 'single'],
         'class_definition' => ['single_line' => true],
         'class_attributes_separation' => [
