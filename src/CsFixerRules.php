@@ -6,7 +6,7 @@ use PhpCsFixer\Finder;
 
 final class CsFixerRules
 {
-    /** Last reviewed with PHP CS Fixer 3.52.1 15 Keys */
+    /** Last reviewed with PHP CS Fixer 3.54.0 15 Keys Accelerate */
     public const CS_FIXER_RULES = [
         'align_multiline_comment' => ['comment_type' => 'all_multiline'],
         'array_indentation' => true,
@@ -18,8 +18,8 @@ final class CsFixerRules
         'blank_line_after_namespace' => true,
         'blank_line_before_statement' => ['statements' => ['for', 'foreach', 'if', 'return', 'switch', 'try', 'while']],
         'braces_position' => [
-            'classes_opening_brace' => 'same_line',
-            'functions_opening_brace' => 'same_line'
+            'classes_opening_brace' => 'next_line',
+            'functions_opening_brace' => 'next_line'
         ],
         'cast_spaces' => ['space' => 'single'],
         'class_definition' => ['single_line' => true],
