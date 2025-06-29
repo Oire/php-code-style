@@ -3,7 +3,7 @@
     "description": "code style for Oire projects written in PHP.",
     "type": "library",
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.3",
         "friendsofphp/php-cs-fixer": "*"
     },
     "license": "MIT",
